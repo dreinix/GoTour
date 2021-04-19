@@ -1,4 +1,4 @@
-package variableTest
+package utils
 
 import (
 	"fmt"
