@@ -1,8 +1,6 @@
 package main
 
-import (
-	"github.com/dreinix/GoTour/utils"
-)
+import "fmt"
 
 func Pic(dx, dy int) [][]uint8 {
 	myPic := make([][]uint8, dy)
@@ -16,6 +14,13 @@ func Pic(dx, dy int) [][]uint8 {
 	return myPic //This do not work on windows
 }
 
+func WordCount(s string) map[string]int {
+
+	return map[string]int{"x": 1}
+
+}
+
 func main() {
-	utils.Show(Pic)
+	fmt.Println(("hola como estás soy la loca"))
+	wc.Test
 }

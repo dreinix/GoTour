@@ -2,19 +2,14 @@ package utils
 
 import (
 	"fmt"
+	"math"
 	"runtime"
 )
 
 func Sqrt(x float64) float64 {
-	var z float64
-	if x < 10 { //10 = 2*3+1
-		z = float64(3 * x)
-	} else {
-		z = float64(x / 3) // factor de 3
-	}
-
+	var z float64 = x / 3
 	var tmp float64 = z * 2
-	for tmp-z > 0.00000001 { // 6 decimales aceptables.
+	for math.Abs(tmp-z) > 1e-8 {
 		tmp = z
 		z -= (z*z - x) / (2 * z)
 	}
