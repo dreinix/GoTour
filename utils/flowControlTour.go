@@ -22,7 +22,7 @@ func Sqrt(x float64) float64 {
 
 }
 
-func swtch() {
+func Swtch() {
 	fmt.Print("Go runs on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":
